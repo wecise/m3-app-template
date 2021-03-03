@@ -1,4 +1,4 @@
-# m3template
+# m3-app-template
 
 ## Project setup
 ```
