@@ -2,7 +2,6 @@ const webpack = require('webpack')
 const WebpackZipPlugin = require('webpack-zip-plugin')
 
 module.exports = {
-    
     devServer: {
         open: process.platform === 'darwin',
         host: '0.0.0.0',
@@ -26,7 +25,7 @@ module.exports = {
                         initialFile: 'app',
                         endPath: './',
                         zipName: 'app.zip',
-                        frontShell: 'sed -i \'\' \'s/src="/src="\\/static\\/app\\/matrix\\/m3-app-template/g\; s/href="/href="\\/static\\/app\\/matrix\\/m3-app-template/g\' ./app/matrix/m3-app-template/index.html',
+                        //frontShell: 'sed -i \'\' \'s/src="/src="\\/static\\/app\\/matrix\\/m3-app-template/g\; s/href="/href="\\/static\\/app\\/matrix\\/m3-app-template/g\' ./app/matrix/m3-app-template/index.html',
                         behindShell: './deploy.sh'
                     })
                 ]
@@ -36,5 +35,7 @@ module.exports = {
         else {
           
         }
-      } 
+      },
+
+    publicPath: '/static/app/matrix/m3-app-template'
 }

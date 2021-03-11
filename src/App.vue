@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img :src="require('@/assets/logo.png')">
     <div>
       <p>
         默认集成ElementUI框架
