@@ -9,7 +9,7 @@
     <h3>开发文档</h3>
     <ul>
       <li><a href="/help/REST_API.html" target="_blank" rel="noopener">REST_API_DOC</a></li>
-      <li><a href="help/SCRIPT_JS_DOC" target="_blank" rel="noopener">SERVER_JS_DOC</a></li>
+      <li><a href="/help/SCRIPT_JS_DOC" target="_blank" rel="noopener">SERVER_JS_DOC</a></li>
       <li><a href="/help/RULE_DOC.html" target="_blank" rel="noopener">规则引擎文档 v1.0.3</a></li>
       <li><a href="/help/ODB_TRIGGER.html" target="_blank" rel="noopener">ODB触发器文档 v1.0.0</a></li>
       <li><a href="/help/FORWARD.html" target="_blank" rel="noopener">数据接入(Forward)</a></li>

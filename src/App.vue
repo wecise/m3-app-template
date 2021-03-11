@@ -6,7 +6,7 @@
         默认集成ElementUI框架
       </p>
     </div>
-    <HelloWorld msg="欢迎使用你的第一个 M³ 小应用"/>
+    <HelloWorld msg="欢迎使用第一个 M³ 小应用"/>
   </div>
 </template>
 
