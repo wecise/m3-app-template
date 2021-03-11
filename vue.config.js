@@ -37,5 +37,14 @@ module.exports = {
         }
       },
 
-    publicPath: '/static/app/matrix/m3-app-template'
+    publicPath: '/static/app/matrix/m3-app-template',
+
+    css: {
+        loaderOptions: {
+            sass: {
+                prependData: `$publicPath: "${ process.env.NODE_ENV === 'production' ? './' : '/' }";`
+            }
+        }
+    }
+
 }
