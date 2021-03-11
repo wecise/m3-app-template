@@ -11,7 +11,7 @@ ElementUI.Tooltip.props.openDelay.default = 1000;
 /* 
  * 测试环境
 */
-const m3 = require("@cnwangzd/m3js");
+const m3 = require("@wecise/m3js");
 Vue.prototype.m3 = m3;
 window.m3 = m3;
 
@@ -32,7 +32,7 @@ if(process.env.NODE_ENV === "development"){
 
   /* env1 */
   let env1 = function(){
-    m3.connect("http","47.92.151.165",8080,"wecise","admin","admin").then(()=>{
+    m3.connect("http","47.92.151.165",8080,"wecise","admin","admin1234)(*&").then(()=>{
       init();
     }).catch((err)=>{
       console.log(err);

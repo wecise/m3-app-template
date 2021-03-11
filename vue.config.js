@@ -10,7 +10,12 @@ module.exports = {
         hotOnly: false,
     },
 
+    publicPath: process.env.NODE_ENV === 'production' 
+        ? '/static/app/matrix/m3-app-template' 
+        : '/',
+
     outputDir: 'app/matrix/m3-app-template',
+    
     productionSourceMap: false,
 
     configureWebpack: config => {
@@ -29,20 +34,6 @@ module.exports = {
                         behindShell: './deploy.sh'
                     })
                 ]
-            }
-        } 
-        // 开发环境
-        else {
-          
-        }
-      },
-
-    publicPath: '/static/app/matrix/m3-app-template',
-
-    css: {
-        loaderOptions: {
-            sass: {
-                prependData: `$publicPath: "${ process.env.NODE_ENV === 'production' ? './' : '/' }";`
             }
         }
     }

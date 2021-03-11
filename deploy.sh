@@ -4,7 +4,7 @@ set -euo
 
 host=${M3_HOST}
 company="wecise"
-auth="${company}.admin:admin"
+auth="${company}.admin:admin1234)(*&"
 target="app.zip"
 
 echo
