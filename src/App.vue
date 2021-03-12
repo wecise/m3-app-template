@@ -25,8 +25,7 @@ export default {
 
 body{
   background-image: url( "./assets/bg.jpg");
-  background-repeat: no-repeat;
-  background-position-y: 5%;
+  background-size: cover;
 }
 
 #app {
