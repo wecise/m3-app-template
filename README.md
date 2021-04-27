@@ -24,5 +24,11 @@ npm run build
 npm run lint
 ```
 
+## Feature
+
+
+<img src="http://doc.wecise.com:8089/%E4%BA%A7%E5%93%81%E6%96%87%E6%A1%A3/%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0/assets/development/截屏2021-04-27 下午8.26.45.png" style="width:80%;" />
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

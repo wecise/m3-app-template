@@ -1,11 +1,22 @@
 #! /bin/bash
 set -euo
 
-
-host=${M3_HOST}
-company="wecise"
-auth="${company}.admin:admin1234)(*&"
+company="eventbus"
+username="admin"
+password="admin"
 target="app.zip"
+
+auth="${company}.${username}:${password}"
+hostTerm=${M3_HOST}
+hostPreFix="http://"
+host=""
+if [[ $hostTerm =~ $hostPreFix ]] 
+then
+    host=$hostTerm
+else
+    host="http://$hostTerm"
+fi
+
 
 echo
 echo '应用发布开始**********************************************************************'
@@ -15,7 +26,7 @@ echo
 echo '发布租户：'${company}
 echo
 
-curl --location -u "${auth}" -X POST "http://$host/fs/import?issys=true" --form "uploadfile=@${target}"
+curl --location -u "${auth}" -X POST "$host/fs/import?issys=true" --form "uploadfile=@${target}"
 
 echo
 rm -rf ${target}
