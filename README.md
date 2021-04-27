@@ -5,7 +5,7 @@
 
 ## Feature
 
-<img src="http://wecise.com/assets/image/m3-app-template/截屏2021-04-27 下午8.26.45.png" style="width:60%;" />
+<img src="http://wecise.com/assets/image/m3-app-template/01.png" style="width:60%;" />
 
 ## Project setup
 ```
